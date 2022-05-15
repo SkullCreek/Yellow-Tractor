@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  width: 100%;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+header {
+  width: 100%;
+}
+
+header section {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header section #left {
+  width: 45%;
+  height: 100vh;
+  background: #007B6D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0rem 8rem;
+}
+
+header section #left h1 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 7rem;
+  line-height: 8.6rem;
+  color: #FEFEFE;
+  padding-bottom: 4rem;
+  padding-top: 100px;
+  position: relative;
+}
+
+header section #left h1::before {
+  content: "";
+  position: absolute;
+  bottom: 2.2rem;
+  left: 8.5rem;
+  width: 30rem;
+  height: 2.6rem;
+  background: url("../assets/line.svg") center center no-repeat;
+  background-size: contain;
+  z-index: 0;
+}
+
+header section #left p {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 29px;
+  color: #F8F8F8;
+  padding-bottom: 3rem;
+}
+
+header section #left button {
+  padding: 1rem 5.4rem;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 22px;
+  color: #FEFEFE;
+  background: #EF920F;
+  border-radius: .1rem;
+  border: none;
+  cursor: pointer;
+}
+
+header section #right {
+  width: 55%;
+  height: 100vh;
+  background: url("../assets/assistance-back.svg") center center no-repeat;
+  background-size: contain;
+}
+
+nav {
+  width: 100%;
+  padding: 3rem 9rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  width: 55rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul #logo {
+  width: 4rem;
+  height: 4rem;
+  background: url("../assets/logo.svg") center center no-repeat;
+  background-size: contain;
+}
+
+nav ul #logo_name {
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0.01em;
+  color: #DEECA3;
+}
+
+nav ul li a {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #296059;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#dealers {
+  width: 100%;
+  padding: 11rem 0rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#dealers h1 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5rem;
+  color: #0E1724;
+  padding-bottom: 7rem;
+}
+
+#dealers section {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#dealers section div {
+  width: 28rem;
+  padding: 6rem 4rem 3rem 4rem;
+  background-color: #007B6D;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 11.3497px 21.1467px 34px rgba(0, 0, 0, 0.07);
+          box-shadow: 11.3497px 21.1467px 34px rgba(0, 0, 0, 0.07);
+}
+
+#dealers section div img {
+  padding-bottom: 13rem;
+}
+
+#dealers section div h1 {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 3.6rem;
+  color: #F8F8F8;
+  padding-bottom: 0;
+}
+
+#dealers section div:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+footer {
+  padding: 2rem;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: white;
+  background-color: #0B0D17;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  -webkit-font-feature-settings: 'salt' on, 'liga' off;
+          font-feature-settings: 'salt' on, 'liga' off;
+  color: #D9DBE1;
+}
+
+#seeds, #fertilizers, #pesticides {
+  width: 100%;
+  min-height: 1800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(14, 23, 36, 0.356);
+  display: none;
+  place-items: center;
+}
+
+#seeds div, #fertilizers div, #pesticides div {
+  width: 110rem;
+  padding: 5rem 7rem;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-shadow: 19.5881px 30.2044px 150px rgba(0, 0, 0, 0.03);
+          box-shadow: 19.5881px 30.2044px 150px rgba(0, 0, 0, 0.03);
+  border-radius: 1rem;
+}
+
+#seeds div h1, #fertilizers div h1, #pesticides div h1 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #000000;
+  padding-bottom: 2rem;
+}
+
+#seeds div table, #fertilizers div table, #pesticides div table {
+  width: 100%;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+#seeds div table tr, #fertilizers div table tr, #pesticides div table tr {
+  width: 100%;
+  color: #000000;
+  padding-bottom: 2rem;
+}
+
+#seeds div table tr th, #fertilizers div table tr th, #pesticides div table tr th {
+  text-align: left;
+  padding: .8rem 2rem;
+  background-color: #000000;
+  color: white;
+}
+
+#seeds div table tr td, #fertilizers div table tr td, #pesticides div table tr td {
+  padding: .8rem 2rem;
+  background-color: #F1F1F1;
+  color: black;
+}
+
+#seeds div table tr td button, #fertilizers div table tr td button, #pesticides div table tr td button {
+  border: none;
+  padding: .7rem 1.8rem;
+  cursor: pointer;
+  color: white;
+  background: #007B6D;
+}
+/*# sourceMappingURL=assistance.css.map */

@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+main{
+    width: 100%;
+}
+
+body{
+    background-color: #E5E5E5;
+}
+header{
+    width: 100%;
+    section{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        #left{
+            width: 45%;
+            height: 100vh;
+            background: #007B6D;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0rem 8rem;
+            h1{
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 7rem;
+                line-height: 8.6rem;
+                color: #FEFEFE;
+                padding-bottom: 4rem;
+                padding-top: 100px;
+                position: relative;
+            }
+
+            h1::before{
+                content: "";
+                position: absolute;
+                bottom: 2.2rem;
+                left: 8.5rem;
+                width: 30rem;
+                height: 2.6rem;
+                background: url("../assets/line.svg") center center no-repeat;
+                background-size: contain;
+                z-index: 0;
+            }
+
+            p{
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 2.4rem;
+                line-height: 29px;
+                color: #F8F8F8;
+                padding-bottom: 3rem;
+            }
+            button{
+                padding: 1rem 5.4rem;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 22px;
+                color: #FEFEFE;
+                background: #EF920F;
+                border-radius: .1rem;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        #right{
+            width: 55%;
+            height: 100vh;
+            background: url("../assets/crop.jpg") center center no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+nav{
+    width: 100%;
+    padding: 3rem 9rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul{
+        width: 55rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #logo{
+            width: 4rem;
+            height: 4rem;
+            background: url("../assets/logo.svg") center center no-repeat;
+            background-size: contain;
+        }
+        #logo_name{
+            font-family: 'Staatliches';
+            font-weight: 400;
+            font-size: 2rem;
+            letter-spacing: 0.01em;
+            color: #DEECA3;
+
+        }
+        li{
+            a{
+                font-family: 'DM Sans';
+                font-weight: 700;
+                font-size: 1.6rem;
+                color: #296059;
+            }
+        }
+    }
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+#organize{
+    width: 100%;
+    padding: 25rem 9.5rem;
+    display: flex;
+    justify-content: space-between;
+    #org_left{
+        width: 48%;
+        position: relative;
+        div{
+            width: 50rem;
+            height: 32.4rem;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.18), 0px 0px 2px rgba(255, 255, 255, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.04);
+            border-radius: 10px;        
+        }
+    }
+
+    #org_left::before{
+        content: "";
+        width: 6rem;
+        height: 29rem;
+        position: absolute;
+        bottom: 25rem;
+        right: -50px;
+        background: url("../assets/Arrow.svg") center center no-repeat;
+        background-size: contain;
+
+    }
+
+    #org_right{
+        width: 45%;
+        h1{
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 7.2rem;
+            line-height: 86px;
+            color: #0E1724;
+            padding-bottom: 3rem;
+        }
+        p{
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 23px;
+            color: #5B5D63;
+            padding-bottom: 3rem;
+        }
+        ul{
+            list-style: disc;
+            li{
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.8rem;
+                line-height: 22px;
+                color: #000000;
+                padding-bottom: 2rem;
+                transform: translate(3rem);
+            }
+        }
+    }
+}
+
+#streamline{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: #DEECA3;
+    div{
+        width: 80%;
+        padding: 3rem 8rem;
+        background: #007B6D;
+        transform: translateY(-180px);
+        h1{
+            width: 100%;
+            text-align: center;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 3.2rem;
+            color: #FEFEFE;
+            padding-bottom: 2rem;
+        }
+        p{
+            width: 100%;
+            text-align: center;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: #E5E5E5;
+            padding-bottom: 3rem;
+        }
+        aside{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            article{
+                width: 23.5rem;
+                background-color: white;
+                padding: 2.2rem 3rem;
+                display: grid;
+                place-items: center;
+                img{
+                    padding-bottom: 2rem;
+                }
+                h2{
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+
+                    color: #000000;
+                    padding-bottom: 1.5rem;
+                }
+                p{
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    /* or 120% */
+
+                    display: flex;
+                    align-items: center;
+
+                    color: #454444;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    padding: 2rem;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    color: white;
+    background-color: #0B0D17;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    font-feature-settings: 'salt' on, 'liga' off;
+
+    /* Text / Gray 300 */
+
+    color: #D9DBE1;
+
+}
