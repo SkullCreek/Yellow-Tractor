@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+main{
+    width: 100%;
+}
+
+body{
+    background-color: #E5E5E5;
+}
+header{
+    width: 100%;
+    section{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        #left{
+            width: 45%;
+            height: 100vh;
+            background: #007B6D;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0rem 8rem;
+            h1{
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 7rem;
+                line-height: 8.6rem;
+                color: #FEFEFE;
+                padding-bottom: 4rem;
+                padding-top: 100px;
+                position: relative;
+            }
+
+            h1::before{
+                content: "";
+                position: absolute;
+                bottom: 2.2rem;
+                left: 8.5rem;
+                width: 30rem;
+                height: 2.6rem;
+                background: url("../assets/line.svg") center center no-repeat;
+                background-size: contain;
+                z-index: 0;
+            }
+
+            p{
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 2.4rem;
+                line-height: 29px;
+                color: #F8F8F8;
+                padding-bottom: 3rem;
+            }
+            button{
+                padding: 1rem 5.4rem;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 22px;
+                color: #FEFEFE;
+                background: #EF920F;
+                border-radius: .1rem;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        #right{
+            width: 55%;
+            height: 100vh;
+            background: url("../../assets/crop.jpg") center center no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+nav{
+    width: 100%;
+    padding: 3rem 9rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul{
+        width: 55rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #logo{
+            width: 4rem;
+            height: 4rem;
+            background: url("../assets/logo.svg") center center no-repeat;
+            background-size: contain;
+        }
+        #logo_name{
+            font-family: 'Staatliches';
+            font-weight: 400;
+            font-size: 2rem;
+            letter-spacing: 0.01em;
+            color: #DEECA3;
+
+        }
+        li{
+            a{
+                font-family: 'DM Sans';
+                font-weight: 700;
+                font-size: 1.6rem;
+                color: #296059;
+            }
+        }
+    }
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+footer{
+    padding: 2rem;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    color: white;
+    background-color: #0B0D17;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+#Government-Schemes{
+    width: 100%;
+    padding: 8rem 20rem;
+    display: grid;
+    place-items: center;
+    h1{
+        font-family: 'DM Sans';
+        font-weight: 800;
+        font-size: 4rem;
+        text-align: center;
+        color: #232323;
+        padding-bottom: 4rem;
+    }
+    div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        article{
+            width: 35rem;
+            padding: 4rem 3rem;
+            background-color: white;
+            margin-bottom: 4rem;
+            box-shadow: 11.3497px 21.1467px 34px rgba(0, 0, 0, 0.07);
+            h2{
+                width: 100%;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 2rem;
+                color: #18191F;
+                padding-bottom: 2rem;
+            }
+            p{
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.6rem;
+                color: #18191F;
+                padding-bottom: 2rem;
+            }
+            button{
+                background-color: transparent;
+                border: none;
+                font-family: 'DM Sans';
+                font-weight: 500;
+                font-size: 1.2rem;
+                color: #8C30F5;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#practices{
+    width: 100%;
+    padding: 8rem 20rem;
+    display: grid;
+    place-items: center;
+    h1{
+        font-family: 'DM Sans';
+        font-weight: 800;
+        font-size: 4rem;
+        text-align: center;
+        color: #232323;
+        padding-bottom: 8rem;
+    }
+    div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #left{
+            display: flex;
+            flex-direction: column;
+        }
+        #right{
+            width: 50%;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            ul{
+                list-style: disc;
+                transform: translateY(-10rem);
+                li{
+                    padding-bottom: 4rem;
+                }
+            }
+            h3{
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 2rem;
+                color: #18191F;
+            }
+            p{
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.8rem;
+                color: #18191F;
+            }
+        }
+    }
+}
+
+#more{
+    padding: 0 20rem;
+    display: grid;
+    place-items: center;
+    h1{
+        font-family: 'DM Sans';
+        font-weight: 800;
+        font-size: 4rem;
+        text-align: center;
+        color: #232323;
+        padding-bottom: 8rem;
+    }
+    article{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    div{
+        width: 35rem;
+        iframe{
+            width: 100%;
+            height: 19.6rem;
+            margin-bottom: 2rem;
+        }
+        h3{
+            font-family: 'DM Sans';
+            font-weight: 600;
+            font-size: 2.4rem;
+            color: #18191F;
+            padding-bottom: 1.5rem;
+        }
+        p{
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 1.4rem;
+            color: #18191F;
+            padding-bottom: 10rem;
+        }
+    }
+}

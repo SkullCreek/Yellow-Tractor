@@ -163,65 +163,6 @@ a {
   text-decoration: none;
 }
 
-#dealers {
-  width: 100%;
-  padding: 11rem 0rem;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
-
-#dealers h1 {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 5rem;
-  color: #0E1724;
-  padding-bottom: 7rem;
-}
-
-#dealers section {
-  width: 75%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#dealers section div {
-  width: 28rem;
-  padding: 6rem 4rem 3rem 4rem;
-  background-color: #007B6D;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  cursor: pointer;
-  -webkit-box-shadow: 11.3497px 21.1467px 34px rgba(0, 0, 0, 0.07);
-          box-shadow: 11.3497px 21.1467px 34px rgba(0, 0, 0, 0.07);
-}
-
-#dealers section div img {
-  padding-bottom: 13rem;
-}
-
-#dealers section div h1 {
-  font-family: 'DM Sans';
-  font-weight: 700;
-  font-size: 3.6rem;
-  color: #F8F8F8;
-  padding-bottom: 0;
-}
-
-#dealers section div:hover {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
 footer {
   padding: 2rem;
   width: 100%;
@@ -234,86 +175,97 @@ footer {
   font-style: normal;
   font-weight: 400;
   font-size: 1.4rem;
-  -webkit-font-feature-settings: 'salt' on, 'liga' off;
-          font-feature-settings: 'salt' on, 'liga' off;
-  color: #D9DBE1;
 }
 
-#seeds, #fertilizers, #pesticides {
+#Government-Schemes {
   width: 100%;
-  min-height: 2700px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  background-color: rgba(14, 23, 36, 0.356);
-  display: none;
-  place-items: center;
-}
-
-#seeds div, #fertilizers div, #pesticides div {
-  width: 110rem;
-  padding: 5rem 7rem;
-  background-color: white;
+  padding: 8rem 20rem;
   display: -ms-grid;
   display: grid;
   place-items: center;
-  -webkit-box-shadow: 19.5881px 30.2044px 150px rgba(0, 0, 0, 0.03);
-          box-shadow: 19.5881px 30.2044px 150px rgba(0, 0, 0, 0.03);
-  border-radius: 1rem;
 }
 
-#seeds div h1, #fertilizers div h1, #pesticides div h1 {
+#Government-Schemes h1 {
   font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 2.4rem;
-  color: #000000;
-  padding-bottom: 2rem;
+  font-weight: 800;
+  font-size: 4rem;
+  text-align: center;
+  color: #232323;
+  padding-bottom: 4rem;
 }
 
-#seeds div table, #fertilizers div table, #pesticides div table {
+#Government-Schemes div {
   width: 100%;
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.5rem;
-}
-
-#seeds div table tr, #fertilizers div table tr, #pesticides div table tr {
-  width: 100%;
-  color: #000000;
-  padding-bottom: 2rem;
-}
-
-#seeds div table tr th, #fertilizers div table tr th, #pesticides div table tr th {
-  text-align: left;
-  padding: .8rem 2rem;
-  background-color: #000000;
-  color: white;
-}
-
-#seeds div table tr td, #fertilizers div table tr td, #pesticides div table tr td {
-  padding: .8rem 2rem;
-  background-color: #F1F1F1;
-  color: black;
-}
-
-#seeds div table tr td button, #fertilizers div table tr td button, #pesticides div table tr td button {
-  border: none;
-  padding: .7rem 1.8rem;
-  cursor: pointer;
-  color: white;
-  background: #007B6D;
-}
-
-#animal-husbandary {
-  width: 100%;
-  padding: 4rem 12rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#Government-Schemes div article {
+  width: 35rem;
+  padding: 4rem 3rem;
+  background-color: white;
+  margin-bottom: 4rem;
+  -webkit-box-shadow: 11.3497px 21.1467px 34px rgba(0, 0, 0, 0.07);
+          box-shadow: 11.3497px 21.1467px 34px rgba(0, 0, 0, 0.07);
+}
+
+#Government-Schemes div article h2 {
+  width: 100%;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #18191F;
+  padding-bottom: 2rem;
+}
+
+#Government-Schemes div article p {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #18191F;
+  padding-bottom: 2rem;
+}
+
+#Government-Schemes div article button {
+  background-color: transparent;
+  border: none;
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #8C30F5;
+  cursor: pointer;
+}
+
+#practices {
+  width: 100%;
+  padding: 8rem 20rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#practices h1 {
+  font-family: 'DM Sans';
+  font-weight: 800;
+  font-size: 4rem;
+  text-align: center;
+  color: #232323;
+  padding-bottom: 8rem;
+}
+
+#practices div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -322,94 +274,106 @@ footer {
           align-items: center;
 }
 
-#animal-husbandary h1 {
-  width: 30%;
+#practices div #left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#practices div #right {
+  width: 50%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#practices div #right ul {
+  list-style: disc;
+  -webkit-transform: translateY(-10rem);
+          transform: translateY(-10rem);
+}
+
+#practices div #right ul li {
+  padding-bottom: 4rem;
+}
+
+#practices div #right h3 {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: 700;
-  font-size: 6rem;
-  text-align: center;
-  color: #007B6D;
-  padding-right: 2rem;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #18191F;
 }
 
-#animal-husbandary p {
-  width: 60%;
+#practices div #right p {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: 700;
-  font-size: 3.2rem;
-  text-align: center;
-  color: #474747;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #18191F;
 }
 
-#animal-husbandary::before {
-  content: "";
-  width: 7.08rem;
-  height: 6rem;
-  position: absolute;
-  top: 2rem;
-  left: 58.1rem;
-  z-index: 2;
-  background: url("../assets/comma.svg") center center no-repeat;
-  background-size: contain;
-}
-
-#animal-img {
-  width: 100%;
-  height: 33.4rem;
-  background: url("../assets/sheep.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-#imp-docs {
-  width: 100%;
-  padding: 8rem 18rem;
-  background: #D3FFFA;
+#more {
+  padding: 0 20rem;
   display: -ms-grid;
   display: grid;
   place-items: center;
 }
 
-#imp-docs h1 {
+#more h1 {
   font-family: 'DM Sans';
-  font-weight: 500;
+  font-weight: 800;
   font-size: 4rem;
-  color: #031B4E;
+  text-align: center;
+  color: #232323;
+  padding-bottom: 8rem;
 }
 
-#imp-docs p {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 29px;
-  color: #757575;
-  padding-bottom: 10rem;
-}
-
-#imp-docs div {
+#more article {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-#imp-docs div a {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.8rem;
-  color: #102C60;
-  padding: 2rem 6rem;
-  text-align: center;
-  width: 50rem;
-  margin-bottom: 4rem;
-  background: white;
+#more div {
+  width: 35rem;
 }
-/*# sourceMappingURL=assistance.css.map */
+
+#more div iframe {
+  width: 100%;
+  height: 19.6rem;
+  margin-bottom: 2rem;
+}
+
+#more div h3 {
+  font-family: 'DM Sans';
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #18191F;
+  padding-bottom: 1.5rem;
+}
+
+#more div p {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #18191F;
+  padding-bottom: 10rem;
+}
+/*# sourceMappingURL=about.css.map */

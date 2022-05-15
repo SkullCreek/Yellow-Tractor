@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="css/stylesheet.css">
     <title>Yellow Tractor</title>
 </head>
@@ -21,16 +25,16 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sidePages/assistance.html">Assistance</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Login</a></li>
-                    <li style="padding: .8rem 1.5rem; background-color: #296059;"><a href="" style="color: white;">Signup</a></li>
+                    <li><a href="sidePages/about.html">About</a></li>
+                    <li id="logbtn"><a href="">Login</a></li>
+                    <li style="padding: .8rem 1.5rem; background-color: #296059;" id="signbtn"><a href="" style="color: white;">Signup</a></li>
                 </ul>
             </nav>
             <section>
                 <aside id="left">
                     <h1>The next<br>generation<br>of Farming</h1>
                     <p>Get Maximun yield with yellow<br>tractor smart farming.</p>
-                    <a href=""><button>Signup</button></a>
+                    <a href=""><button id="signbtn2">Signup</button></a>
                 </aside>
                 <aside id="right"></aside>
             </section>
@@ -45,9 +49,9 @@
                 <p>Whether there is as water supply , pesticides, or manuare, yellow tractor is here help you manage everthing related to your farming</p>
                 <ul>
                     <li>Get notification on alerts</li>
-                    <li>Sync across devices</li>
-                    <li>Sync across devices</li>
-                    <li>Sync across devices</li>
+                    <li>Get all the seeds, fertilizers and pesticides dealers number</li>
+                    <li>Know healthy practices for Agriculture</li>
+                    <li>Animal Husbandary</li>
                 </ul>
             </aside>
         </section>
@@ -76,6 +80,26 @@
         </section>
         <footer>© 2020 Darpan. All rights reserved</footer>
     </main>
+    <section class="signup" id="signup">
+        <form id="form" class="animate__animated">
+            <h3>Get started with<br>Collegiate.</h3>
+            <p id="email" >Username</p>
+            <input type="text" required="required" id="sign_email" placeholder="Darpan">
+            <p id="password" >Password</p>
+            <input type="password" id="sign_password" required="required" placeholder="Darpan@1977.">
+            <input type="submit" onclick="signup2()" onchange="signup_check()" id="register" value="Register" style="border: none; background: #F23E64; color: white; ">
+        </form>
+    </section>
+    <section class="login" id="login">
+        <form id="form2" class="animate__animated">
+            <h3>Login with<br>Collegiate.</h3>
+            <p id="email">Username</p>
+            <input type="text" required="required" id="login_email" placeholder="Darpan">
+            <p id="password">Password</p>
+            <input type="password" required="required" id="login_password" placeholder="Darpan@1977."> -->
+            <input type="submit" value="login" style="border: none; background: #F23E64; color: white; ">
+        </form>
+    </section>
     <script src="javaScript/script.js"></script>
 </body>
 </html>

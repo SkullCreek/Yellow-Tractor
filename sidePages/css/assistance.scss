@@ -81,8 +81,8 @@ header{
         #right{
             width: 55%;
             height: 100vh;
-            background: url("../assets/assistance-back.svg") center center no-repeat;
-            background-size: contain;
+            background: url("../../assets/crop.jpg") center center no-repeat;
+            background-size: cover;
         }
     }
 }
@@ -196,7 +196,7 @@ footer{
 
 #seeds, #fertilizers,#pesticides{
     width: 100%;
-    min-height: 1800px;
+    min-height: 2700px;
     position: absolute;
     top: 0;
     left: 0;
