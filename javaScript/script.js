@@ -77,9 +77,33 @@ function signup_check(){
     var name = btoa(document.getElementById("sign_email").value);
     var eml = document.getElementById("sign_email");
     if(localStorage.getItem(name)!=null){
-        window.alert("user already exists")
-        eml.onclick = function(){
-            this.value="";
+        window.alert("user already exists");
+        // eml.onclick = function(){
+        //     this.value="";
+        // }
+        return false;
+    }
+}
+
+function login2(){
+    var username = btoa(document.getElementById("login_email").value);
+    var password = btoa(document.getElementById("login_password").value);
+    var login_input = {username:username,password:password};
+    var login_data = JSON.stringify(login_input);
+    sessionStorage.setItem(username,login_data);
+    var session_data = sessionStorage.getItem(username);
+    var user_detail = JSON.parse(session_data);
+    if(localStorage.getItem(user_detail.username) == null){
+        alert("user not found");
+    }
+    else{
+        if(localStorage.getItem(user_detail.username).match(user_detail.password)){
+            window.open("../profile/profile.html");
+            sessionStorage.setItem('user_mail',username);
+            return false;
+        }
+        else{
+            alert("user not found2");
         }
     }
 }

@@ -84,20 +84,20 @@
         <form id="form" class="animate__animated">
             <h3>Get started with<br>Collegiate.</h3>
             <p id="email" >Username</p>
-            <input type="text" required="required" id="sign_email" placeholder="Darpan">
+            <input type="text" onchange="signup_check()" required="required" id="sign_email" placeholder="Darpan">
             <p id="password" >Password</p>
             <input type="password" id="sign_password" required="required" placeholder="Darpan@1977.">
-            <input type="submit" onclick="signup2()" onchange="signup_check()" id="register" value="Register" style="border: none; background: #F23E64; color: white; ">
+            <input type="submit" onclick="signup2()" id="register" value="Register" style="border: none; background: #F23E64; color: white; ">
         </form>
     </section>
-    <section class="login" id="login">
-        <form id="form2" class="animate__animated">
+    <section class="login" id="login" >
+        <form id="form2" class="animate__animated" onsubmit="login2()">
             <h3>Login with<br>Collegiate.</h3>
             <p id="email">Username</p>
             <input type="text" required="required" id="login_email" placeholder="Darpan">
             <p id="password">Password</p>
-            <input type="password" required="required" id="login_password" placeholder="Darpan@1977."> -->
-            <input type="submit" value="login" style="border: none; background: #F23E64; color: white; ">
+            <input type="password" required="required" id="login_password" placeholder="Darpan@1977.">
+            <input type="submit"  value="login" style="border: none; background: #F23E64; color: white; ">
         </form>
     </section>
     <script src="javaScript/script.js"></script>
