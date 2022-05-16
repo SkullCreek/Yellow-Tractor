@@ -98,7 +98,7 @@ function login2(){
     }
     else{
         if(localStorage.getItem(user_detail.username).match(user_detail.password)){
-            window.open("../profile/profile.html");
+            window.open("profile/profile.html");
             sessionStorage.setItem('user_mail',username);
             return false;
         }
