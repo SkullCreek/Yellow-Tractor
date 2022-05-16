@@ -544,4 +544,22 @@ footer {
   background-size: contain;
   z-index: 100;
 }
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 35%;
+  }
+}
 /*# sourceMappingURL=stylesheet.css.map */
