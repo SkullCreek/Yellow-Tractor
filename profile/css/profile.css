@@ -348,4 +348,8 @@ html {
   color: #5C5C5C;
   padding-bottom: 1.2rem;
 }
+
+a {
+  text-decoration: none;
+}
 /*# sourceMappingURL=profile.css.map */
