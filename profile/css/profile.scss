@@ -220,7 +220,8 @@ html{
                 display: none;
                 #modal_box{
                     width: 60rem;
-                    padding: 5.2rem 9.3rem;background-color: white;
+                    padding: 5.2rem 9.3rem;
+                    background-color: white;
                     display: grid;
                     place-items: center;
                     h2{
@@ -256,3 +257,44 @@ html{
         }
     }
 }
+
+#modal2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    background-color: rgba(92, 92, 92, 0.442);
+    display: none;
+    #modal_box2{
+        width: 80%;
+        padding: 5.2rem 9.3rem;
+        background-color: white;
+        display: grid;
+        place-items: center;
+        h2{
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2.5rem;
+            color: #000000;
+            padding-bottom: 4rem;
+        }
+        p{
+            font-family: 'Mulish';
+            font-weight: 600;
+            font-size: 2rem;
+            color: #5C5C5C;
+            padding-bottom: 1.2rem;
+        }
+    }
+}
+

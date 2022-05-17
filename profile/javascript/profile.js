@@ -109,9 +109,70 @@ const showing_crops = () => {
             div2.appendChild(h4);
             div2.appendChild(h2);
             div2.appendChild(h3);
-            div2.appendChild(button);    
+            div2.appendChild(button);  
+            button.onclick = function() {
+                document.getElementById("modal_heading").innerHTML = `${data.name} (${data.choosecrop}) `;
+                if(data.choosecrop == "Wheat"){
+                    document.getElementById("wheat_sqft").innerHTML = `${data.name} You can grow ${data.area*25} plants on your farm.`;
+                    document.getElementById("ready").innerHTML = `${data.name} You will be ready in 115 days`;
+                    document.getElementById("temp").innerHTML = `The plants can easily survive in temperatures between 3.5 °C and 35 °C, but the best temperature for wheat farming is between 21 °C and 26 °C.`;
+                    document.getElementById("water").innerHTML = `You have to use 10mm of water per day`;
+                }
+                else{
+                    document.getElementById("wheat_sqft").innerHTML = `${data.name} You can plant ${data.area*100} gm/ha on your farm.`;
+                    document.getElementById("ready").innerHTML = `${data.name} You will be ready in 120 days`;
+                    document.getElementById("temp").innerHTML = `The plants can easily survive in temperatures between 21 °C and 37 °C.`;
+                    document.getElementById("water").innerHTML = `you have to use 900 liters of water for 1 kilo worth produce.`;
+
+                }
+                
+
+                 
+                
+                let signup = document.getElementById("modal2");
+                let form = document.getElementById("modal_box2");
+                signup.style.display = "grid";
+                form.classList.remove("animate__bounceOut");
+                form.classList.add("animate__bounceIn");
+                signup.onclick = function(e){
+                    if(e.target.id == 'modal2'){
+                        form.classList.remove("animate__bounceIn");
+                        form.classList.add("animate__bounceOut");
+                        setTimeout(function(){
+                            signup.style.display = 'none';
+                        },800);     
+                    }
+                    return false;
+                }
+                return false; 
+                 
+            }
+              
         }
     }
 }
 
 showing_crops();
+
+const gyan = () => {
+    let sign_btn = document.getElementById("add_btn");
+    let signup = document.getElementById("modal");
+    let form = document.getElementById("modal_box");
+    sign_btn.onclick = () =>{
+        signup.style.display = "grid";
+        form.classList.remove("animate__bounceOut");
+        form.classList.add("animate__bounceIn");
+        return false;
+    }
+    signup.onclick = function(e){
+        if(e.target.id == 'modal'){
+            form.classList.remove("animate__bounceIn");
+            form.classList.add("animate__bounceOut");
+            setTimeout(function(){
+                signup.style.display = 'none';
+            },800);     
+        }
+        return false;
+    }
+}
+gyan();
